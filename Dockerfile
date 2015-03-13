@@ -20,8 +20,6 @@ RUN \
   npm install -g npm && \
   echo '\n# Node.js\nexport PATH="node_modules/.bin:$PATH"' >> /root/.bashrc
 
-RUN npm install -g npm
-
 WORKDIR /app
 ONBUILD ADD Gemfile /app/Gemfile
 ONBUILD RUN bundle install
