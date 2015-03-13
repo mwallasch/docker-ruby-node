@@ -21,8 +21,6 @@ RUN \
   echo '\n# Node.js\nexport PATH="node_modules/.bin:$PATH"' >> /root/.bashrc
 
 WORKDIR /app
-ONBUILD ADD Gemfile /app/Gemfile
-ONBUILD RUN bundle install
-ONBUILD ADD . /data
+ONBUILD ADD . /app
 
 CMD ["bash"]
