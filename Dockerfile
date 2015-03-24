@@ -1,6 +1,6 @@
-FROM ruby:2.2.0
+FROM ruby:2.2.1
 MAINTAINER Michael Wallasch <development@po2mc.de>
-ENV REFRESHED_AT 2015-03-13
+ENV REFRESHED_AT 2015-03-24
 
 RUN \
   apt-get update && apt-get install -y python python-dev python-pip python-virtualenv && \
