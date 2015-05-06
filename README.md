@@ -3,7 +3,7 @@
 This repository contains a Dockerfile of Ruby, nodejs and npm for Docker's automated build published to the public Docker Hub Registry.
 
 ## What's included
-- Ruby 2.2.1
+- Ruby 2.2.2
 - Nodejs (latest)
 - npm
 
