@@ -1,25 +1,25 @@
 FROM ruby:2.2.2
-MAINTAINER Michael Wallasch <development@po2mc.de>
-ENV REFRESHED_AT 2015-08-07
+MAINTAINER Michael Wallasch
+ENV REFRESHED_AT 2016-03-19
 
 RUN apt-get update -qq && apt-get install -y build-essential
 
-# for postgres
+# postgres prerequisites
 RUN apt-get install -y libpq-dev
 
-# for nokogiri
+# nokogiri prerequisites
 RUN apt-get install -y libxml2-dev libxslt1-dev
 
-# for capybara-webkit
+# capybara-webkit prerequisites
 RUN apt-get install -y libqt4-webkit libqt4-dev xvfb
 
-# for node
+# node.js prerequisites
 RUN apt-get install -y python python-dev python-pip python-virtualenv
 
 # cleanup
 RUN rm -rf /var/lib/apt/lists/*
 
-# install nodejs
+# install latest nodejs
 RUN \
   cd /tmp && \
   wget http://nodejs.org/dist/node-latest.tar.gz && \
