@@ -1,18 +1,23 @@
 # Ruby + Nodejs Dockerfile
 
-This repository contains a Dockerfile of Ruby, nodejs and npm for Docker's automated build published to the public Docker Hub Registry.
+Ruby + Nodejs docker image
+
+A Dockerfile to create an image for Docker with Ruby and Nodejs.
 
 ## What's included
 - Ruby 2.2.2
 - Nodejs (latest)
 - npm
 
-### Installation
-1. Install [Docker](https://www.docker.com/).
+### Building
+A prebuild image is available via the public 
+[Docker Hub Registry](https://registry.hub.docker.com/u/mwallasch/docker-ruby-node/)
 
-2. Download [automated build](https://registry.hub.docker.com/u/mwallasch/docker-ruby-node/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull mwallasch/docker-ruby-node`
+    docker pull mwallasch/docker-ruby-node
 
-   (alternatively, you can build an image from Dockerfile: `docker build -t="mwallasch/docker-ruby-node" github.com/mwallasch/docker-ruby-node`)
+To build the image by yourself just run 
+
+    docker build -t="mwallasch/docker-ruby-node" github.com/mwallasch/docker-ruby-node
 
 
 ### Usage
