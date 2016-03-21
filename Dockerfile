@@ -1,6 +1,6 @@
 FROM ruby:2.2.2
-MAINTAINER Michael Wallasch
-ENV REFRESHED_AT 2016-03-19
+MAINTAINER Michael Wallasch <development@po2mc.de>
+ENV REFRESHED_AT 2015-08-07
 
 RUN apt-get update -qq && apt-get install -y build-essential
 
