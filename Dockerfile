@@ -1,4 +1,4 @@
-FROM ruby:2.2.2
+FROM ruby:2.3.0
 MAINTAINER Michael Wallasch <development@po2mc.de>
 ENV REFRESHED_AT 2015-08-07
 

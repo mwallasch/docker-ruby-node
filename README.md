@@ -5,7 +5,7 @@ Ruby + Nodejs docker image
 A Dockerfile to create an image for Docker with Ruby and Nodejs.
 
 ## What's included
-- Ruby 2.2.4
+- Ruby 2.3.0
 - Nodejs (latest)
 - npm
 
