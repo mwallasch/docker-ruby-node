@@ -1,6 +1,6 @@
-FROM ruby:2.2.4
+FROM ruby:2.3.3
 MAINTAINER Michael Wallasch <development@po2mc.de>
-ENV REFRESHED_AT 2015-08-07
+ENV REFRESHED_AT 2017-02-27
 
 RUN apt-get update -qq && apt-get install -y build-essential
 
